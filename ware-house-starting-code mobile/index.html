@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WareHouse</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="resources/css/base.css">
+  <link rel="stylesheet" type="text/css" href="resources/css/index.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Serif:700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+  <div class="container">
+<!--======================================== Header -->
+
+    <header role="banner">
+		
+      <div role="link" class="logo-container">
+        <a href="index.html"><img src="resources/img/home.png" alt="Warehouse Logo"></a>
+      </div>
+      <div role="search" class="search-bar">
+        <input type="text" name="search" placeholder="Search for items">
+		  <div>
+			  <a href="linkNotFound.html"> <div aria-label="Search Button" id="searchIcon" class="searchImg"></div></a>
+          </div>
+	  </div>
+      <a href="cart.html" class="button cart">Cart <img src="resources/img/cart.svg" alt="Shopping Button"></a>
+	  <a href="login.html" class="button user">Login <img src="resources/img/userIcon-01.svg" alt="User Button"></a>
+		
+    </header>
+	  
+ 
+	   <nav role="navigation">
+		
+		<ul class="topbar" id="myTopnav">
+			<a role="listitem" href="#" class="active"><i class="fa fa-home"></i></a>
+			<a role="listitem" href="#">Bedroom</a>
+			<a role="listitem" href="#">Bathroom</a>
+			<a role="listitem" href="#">Dinning Room</a>
+			<a role="listitem" href="./living.html">Living Room</a>
+			<a role="listitem" href="#">Kitchen</a>
+			<a role="listitem" href="#">Office</a>
+			<a role="listitem" href="#">Patio</a>
+			<a role="listitem" href="#">Lighting</a>
+			<a role="listitem" href="#">Tools</a>
+			<a role="listitem" href="javascript:void(0);" class="navIcon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+		</ul>
+		
+    </nav>
+<!--==================================W3S Script-->	
+	<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topbar") {
+        x.className += " responsive";
+    } else {
+        x.className = "topbar";
+    }
+}
+</script> 
+
+<!--================================= Hero Section -->
+
+    <main id="main" class="landing">
+      <section aria-label="Featured Sale" role="region" class="hero">
+		  <a href="linkNotFound.html"><h2>Shop Dining Tables</h2></a>
+	   </section>
+<!--==================== Products Preview Section -->
+
+      <div class="products">
+		  
+<!--=======================================Sale Bar-->
+	    <section aria-label="Top Deals" role="region">
+		 <h2>Top Deals</h2>
+			<div class="product-list">
+			  <a href="#" class="product-item">
+				<div class="image-container">
+				  <img src="resources/img/deals/yellow-chair.jpg" alt="Yellow Chair image">
+				</div>
+				<div class="description">
+				  <h3>Yellow Chair</h3>
+				  <span class="price">$189</span>
+				</div>
+			  </a>
+			  <a href="#" class="product-item">
+				<div class="image-container">
+				  <img src="resources/img/deals/wooden-spoons.jpg" alt="Wooden Spoons image">
+				</div>
+				<div class="description">
+				  <h3>Rustic Spoons 8pc.</h3>
+				  <span class="price">$89</span>
+				</div>
+			  </a>
+			  <a href="#" class="product-item">
+				<div class="image-container">
+				  <img src="resources/img/deals/midcen-console.jpg" alt="MidCentury Console Table image">
+				</div>
+				<div class="description">
+				  <h3>Mid-Century Console</h3>
+				  <span class="price">$229</span>
+				</div>
+			  </a>
+			  <a href="#" class="product-item">
+				<div class="image-container">
+				  <img src="resources/img/deals/pottery.jpg" alt="Ceramic Pottery image">
+				</div>
+				<div class="description">
+				  <h3>Ceramic Pottery</h3>
+				  <span class="price">$49</span>
+				</div>
+			  </a>
+			</div>
+		</section>
+
+<!--=============================== Product Categories -->
+        <section aria-label="Shop by Category" role="region">
+        <h2>Shop by category</h2>
+		  <div class="scrollmenu">
+          <div class="product-list categories">
+				
+          <a href="living.html" class="product-category">
+            <div class="image-container">
+              <img src="resources/img/home/living-room.jpg" alt="Living Room Category">
+            </div>
+          </a>
+			
+          <a href="#" class="product-category">
+            <div class="image-container">
+              <img src="resources/img/home/bedroom.jpg" alt="Bedroom Category">
+            </div>
+          </a>
+			
+          <a href="#" class="product-category">
+            <div class="image-container">
+              <img src="resources/img/home/bathroom.jpg" alt="Bathroom Category">
+            </div>
+          </a>
+			
+          <a href="#" class="product-category">
+            <div class="image-container">
+              <img src="resources/img/home/dining-room.jpg" alt="Dining Room Category">
+            </div>
+          </a>
+				
+		</div>
+        </div>
+		</section>
+
+         <!--================ Recently Viewed Products -->
+        <section aria-label="Recently Viewed" role="region">
+		 <h2>Recently Viewed</h2>
+         <div class="product-list">
+			
+			
+			<a href="#" class="product-item">
+            <div class="image-container">
+              <img src="resources/img/home/yellow-chair.jpg" alt="Yellow chair">
+            </div>
+            <div class="description">
+              <h3>Yellow Chair</h3>
+              <span class="price">$189</span>
+            </div>
+          </a>
+			
+			<a href="#" class="product-item">
+            <div class="image-container">
+              <img src="resources/img/home/desk-lamp.jpg" alt="Desk Lamp">
+            </div>
+            <div class="description">
+              <h3>Desk Lamp</h3>
+              <span class="price">$25</span>
+            </div>
+          </a>
+			
+			<a href="#" class="product-item">
+            <div class="image-container">
+              <img src="resources/img/home/white-chair.jpg" alt="White Chair">
+            </div>
+            <div class="description">
+              <h3>White Chair</h3>
+              <span class="price">$99</span>
+            </div>
+          </a>
+			
+			<a href="#" class="product-item">
+            <div class="image-container">
+              <img src="resources/img/home/round-table-copy.jpg" alt="Round Table">
+            </div>
+            <div class="description">
+              <h3>Round Table</h3>
+              <span class="price">$249</span>
+            </div>
+          </a>
+			
+			
+			
+         </div>
+		</section>  
+		  
+      </div>
+	
+    </main>
+
+<!--================================= Footer -->
+
+    <footer role="contentinfo">
+      <img src="resources/img/home.png" alt="Warehouse Logo">
+      <div class="links">
+        <h4>Get to know us</h4>
+        <a href="about.html">About us</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="#">Investor relations</a>
+        <a href="#">Link</a>
+      </div>
+      <div class="links">
+        <h4>Make money with us</h4>
+        <a href="sell.html">Sell on WareHouse</a>
+        <a href="#">Become a vendor</a>
+        <a href="#">Fundraiser events</a>
+        <a href="#">Community outreach</a>
+      </div>
+      <div aria-label="Help" class="links">
+        <h4>Help</h4>
+        <a href="#">Contact us</a>
+        <a href="#">Conditions of use</a>
+        <a href="linkNotFound.html">Report a problem</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+		
+    </footer>
+	  <hr>
+  </div>
+	
+</body>
+</html>

@@ -1,0 +1,67 @@
+/* About Page */
+html{
+	height: 100%;
+	background-color:hsla(0, 0%, 98%, 1);
+}
+
+.linkError h1 {
+	font-family: "Oswald",sans-serif;
+	color:white;
+	  width: 100%;
+	  padding: 10.5rem 0;
+	  background-image: url('../img/empty.png');
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  background-position: center;
+	  font-size: 5rem;
+	  font-stretch: condensed;
+}
+
+@media only screen and (max-width : 470px ){
+	.linkError h1 {
+	  background-position: right;
+	  font-size: 3rem;
+}
+
+}
+.linkError span{
+	 color:hsl(195, 94%, 39%);
+}
+
+.linkError .information {
+     padding: 1.75rem 20% 6.75rem 20%;
+     color: hsla(0, 0%, 29%, 1);
+	 display:grid;
+}
+
+.linkError p {
+  padding-bottom: 1rem;
+  font-size: inherit;
+  line-height: 1.8;
+	letter-spacing: .02rem;
+}
+
+.linkError .join {
+  display: grid;
+  justify-items: center;
+
+
+@media only screen and (max-width: 735px) {
+  .linkError h1 {
+    font-size: 6rem;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .linkError h1 {
+    font-size: 4rem;
+  }
+
+  .linkError h3 {
+    font-size: 1.25rem;
+  }
+
+  .linkError p {
+    font-size: 1rem;
+  }
+}

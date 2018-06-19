@@ -1,0 +1,60 @@
+/* About Page */
+
+.about img {
+  width: 100%;
+ /* background-image: url('../img/heroLight.png');*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.about h2{
+	margin-top: .5rem;
+	font-size: 2rem;
+}
+.about .information {
+  padding: 1.75rem 20% 6.75rem 20%;
+  color: hsla(0, 0%, 29%, 1);
+	display:grid;
+}
+
+.about p {
+  padding-bottom: 2rem;
+  font-size: inherit;
+  line-height: 1.8;
+	letter-spacing: .02rem;
+}
+
+.join h3{
+	font-family: "Oswald", sans-serif;
+	font-size: 1.2rem;
+	padding-bottom: 1rem;
+}
+.about .join {
+  display: grid;
+  justify-items: center;
+  padding: 1.5rem 4rem;
+  border: solid 1px #e7e7e7;
+  border-radius: 2px;
+  background-color: hsla(0, 0%, 100%, 1);
+}
+
+@media only screen and (max-width: 735px) {
+  .about h1 {
+    font-size: 6rem;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .about h1 {
+    font-size: 4rem;
+  }
+
+  .about h3 {
+    font-size: 1.25rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+  }
+}
